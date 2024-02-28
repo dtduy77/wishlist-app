@@ -1,7 +1,7 @@
 from flask import Flask, request, render_template
 import redis
 
-app = Flask(__name__)
+app = Flask(__name__, static_url_path='/static')
 
 import os
 
